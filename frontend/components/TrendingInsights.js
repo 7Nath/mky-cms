@@ -9,7 +9,7 @@ export default function TrendingInsights({ insights }) {
   console.log('TRENDING INSIGHTS:', insights);
   if (!insights || insights.length === 0) return null;
   return (
-    <section className="bg-white py-16">
+    <section className="w-full bg-white py-4 shadow-lg border-t">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Trending Insights

@@ -4,21 +4,16 @@ import TrendingInsights from "../components/TrendingInsights";
 export default function Home({ featuredInsight, trendingInsights }) {
   return (
     <>
-      <div className="relative py-32 flex flex-col">
-        {/* Background Gradient */}
-        <div
-          className="absolute inset-0 -z-10"
-          style={{
-            background: "linear-gradient(180deg, #18181b 0%, #7c3aed 50%,rgb(158, 111, 253) 100%)"
-          }}
-        />
-        {/* ...reste de la page */}
-      </div>
-
       {/* CMS-powered Hero: displays featured Insight */}
-      <Hero insight={featuredInsight} />
-      {/* Trending Insights strip below Hero */}
-      <TrendingInsights insights={trendingInsights} />
+      {/* HERO qui prend la hauteur du viewport sur petit écran */}
+      <section className="relative min-h-screen flex flex-col justify-end bg-gradient-to-b from-[#18181b] via-[#7c3aed] to-[#9e6ffd] overflow-hidden">
+        <Hero insight={featuredInsight} />
+
+        {/* Bandeau Trending - coller juste en bas */}
+        <div className="w-full absolute left-0 bottom-0 z-10">
+          <TrendingInsights insights={trendingInsights} />
+        </div>
+      </section>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Services</h2>
