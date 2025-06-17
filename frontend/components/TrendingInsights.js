@@ -1,38 +1,32 @@
-import Link from 'next/link';
-
 /**
  * TrendingInsights
- * Displays up to 4 trending insights in a full-width strip below the Hero.
+ * Displays up to 4 trending insights in a compact horizontal banner.
  * @param {Array} insights - Array of Strapi entries { id, attributes }
  */
 export default function TrendingInsights({ insights }) {
-  console.log('TRENDING INSIGHTS:', insights);
   if (!insights || insights.length === 0) return null;
   return (
-    <section className="w-full bg-white py-4 shadow-lg border-t">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Trending Insights
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {insights.map((item, idx) => {
-            if (!item || !item.attributes) {
-              console.log("⚠️ Insight mal formaté :", item);
+    <section className="w-full bg-white">
+      <div className="flex items-center px-4 py-3">
+        <div className="font-bold text-black mr-8 leading-tight uppercase">
+          <span className="block text-base">TRENDING</span>
+          <span className="block text-sm">INSIGHTS</span>
+        </div>
+        <div className="flex-1 flex items-center overflow-x-auto whitespace-nowrap snap-x snap-mandatory">
+          {insights.slice(0, 4).map((item, idx) => {
+            if (!item) {
               return null;
             }
-            const { id, attributes } = item;
-            const { title, summary, ctaText } = attributes;
-            const href = `/insights/${id}`;
+            const { id, title } = item;
             return (
-              <div key={id} className="flex flex-col items-start">
-                <span className="text-5xl font-bold text-gray-900">{idx + 1}</span>
-                <h3 className="mt-4 text-xl font-semibold text-gray-900">{title}</h3>
-                <p className="mt-2 text-gray-700 flex-grow">{summary}</p>
-                {ctaText && (
-                  <Link href={href} className="mt-4 inline-block text-sm font-semibold text-black hover:text-gray-600">
-                    {ctaText}
-                  </Link>
-                )}
+              <div
+                key={id}
+                className="flex items-center pr-8 mr-8 border-r border-gray-200 last:border-none last:mr-0 snap-start"
+              >
+                <span className="text-blue-600 font-bold text-2xl mr-2">
+                  {idx + 1}
+                </span>
+                <span className="truncate text-black">{title}</span>
               </div>
             );
           })}

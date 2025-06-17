@@ -2,6 +2,8 @@ import Hero from "../components/Hero";
 import TrendingInsights from "../components/TrendingInsights";
 
 export default function Home({ featuredInsight, trendingInsights }) {
+  // Debug: log trendingInsights to check data structure
+  console.log('TrendingInsights:', trendingInsights);
   return (
     <>
       {/* CMS-powered Hero: displays featured Insight */}
