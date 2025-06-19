@@ -175,7 +175,7 @@ export default function Navbar({
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 inset-x-0 z-50 bg-transparent backdrop-filter shadow-none"
+      className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-filter shadow-none"
       role="navigation"
       aria-label="Main navigation"
     >

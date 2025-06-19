@@ -14,7 +14,7 @@ export default function Hero({ insight }) {
   const isImageLeft = heroPosition === "image-left";
 
   return (
-    <div className="relative pt-54">
+    <div className="relative mt-24">
       {/* Gradient overlay at the top to blend with navbar */}
       <div
         className="absolute top-0 left-0 w-full h-24 z-10 pointer-events-none"

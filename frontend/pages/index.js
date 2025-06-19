@@ -8,8 +8,8 @@ export default function Home({ featuredInsight, trendingInsights }) {
     <>
       {/* CMS-powered Hero: displays featured Insight */}
       {/* HERO qui prend la hauteur du viewport sur petit écran */}
-      <section className="relative flex flex-col justify-center min-h-[calc(100vh-var(--nav-height))] pt-[var(--nav-height)] bg-hero-mky overflow-hidden">
-        <div className="absolute inset-x-0 top-7 h-[var(--nav-height)] bg-white" />
+      <section className="relative flex flex-col justify-center min-h-[calc(100vh-var(--nav-height))] bg-hero-mky overflow-hidden">
+        {/* <div className="absolute inset-x-0 top-7 h-[var(--nav-height)] bg-white" /> */}
         <Hero insight={featuredInsight} />
 
         {/* Bandeau Trending - coller juste en bas */}
