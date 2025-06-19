@@ -183,7 +183,7 @@ export default function Navbar({
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
-              <img src={logoSrc} alt={logoAlt} className="h-8 w-auto" />
+              <img src={logoSrc} alt={logoAlt} className="h-11 w-auto" />
           </Link>
         </div>
         {/* Desktop Menu */}
@@ -204,7 +204,7 @@ export default function Navbar({
                   aria-expanded={openMenu === item.title}
                   onClick={() => setOpenMenu(openMenu === item.title ? null : item.title)}
                   onKeyDown={(e) => handleKeyDown(e, item.title)}
-                  className="text-white hover:text-violet-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-black hover:text-violet-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   {item.title}
                 </button>
@@ -223,7 +223,7 @@ export default function Navbar({
                             <li key={link.title} role="none">
                               <Link href={link.href}
                                   role="menuitem"
-                                  className="text-gray-600 hover:text-blue-600 text-sm"
+                                  className="text-black hover:text-blue-600 text-sm"
                                 >
                                   {link.title}
                               </Link>
@@ -355,7 +355,7 @@ export default function Navbar({
                         <ul className="mt-2 space-y-2">
                           {col.links.map((link) => (
                             <li key={link.title}>
-                              <Link href={link.href} className="block text-gray-800 hover:text-blue-600">
+                              <Link href={link.href} className="block text-black hover:text-blue-600">
                                   {link.title}
                               </Link>
                             </li>
@@ -368,11 +368,11 @@ export default function Navbar({
               </div>
             ))}
             <div className="pt-4 border-t border-gray-200">
-              <Link href="/signin" className="block text-gray-800 hover:text-blue-600 py-2">Sign In
+              <Link href="/signin" className="block text-black hover:text-blue-600 py-2">Sign In
               </Link>
-              <Link href="/subscribe" className="block text-gray-800 hover:text-blue-600 py-2">Subscribe
+              <Link href="/subscribe" className="block text-black hover:text-blue-600 py-2">Subscribe
               </Link>
-              <button className="flex items-center text-gray-800 hover:text-blue-600 py-2 focus:outline-none">
+              <button className="flex items-center text-black hover:text-blue-600 py-2 focus:outline-none">
                 <span className="sr-only">Search</span>
                 <svg
                   className="h-5 w-5"
