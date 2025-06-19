@@ -179,15 +179,37 @@ export default function Navbar({
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-16">
-        {/* Logo */}
-        <div className="flex-shrink-0">
-          <Link href="/">
-              <img src={logoSrc} alt={logoAlt} className="h-11 w-auto" />
-          </Link>
+      <div className="flex items-center justify-between h-24 px-8 w-[98vw] max-w-[1800px] mx-auto relative">
+         {/* Left Hamburger and Logo */}
+        <div className="flex items-center space-x-7">
+          <button
+            className="text-gray-800 hover:text-blue-600 focus:outline-none mr-[12px] ml-2"
+            onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open Menu"
+          >
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div className="flex-shrink-0">
+            <Link href="/">
+                <img src={logoSrc} alt={logoAlt} className="h-14 w-auto" />
+            </Link>
+          </div>
         </div>
         {/* Desktop Menu */}
-        <div className="hidden md:flex md:space-x-8">
+        <div className="hidden md:flex md:space-x-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <ul role="menubar" className="flex space-x-8">
             {menuItems.map((item) => (
               <li
@@ -264,33 +286,12 @@ export default function Navbar({
               />
             </svg>
           </button>
-          {/* Mobile Hamburger */}
-          <button
-            className="md:hidden text-gray-800 hover:text-blue-600 focus:outline-none ml-4"
-            onClick={() => setMobileMenuOpen(true)}
-            aria-label="Open Menu"
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
         </div>
       </div>
       {/* Mobile Slide-Out Menu */}
       <div
         className={`fixed inset-0 z-50 transform ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
         aria-hidden={!mobileMenuOpen}
       >
@@ -299,7 +300,7 @@ export default function Navbar({
           className="absolute inset-0 bg-black bg-opacity-25"
           onClick={() => setMobileMenuOpen(false)}
         />
-        <div className="absolute right-0 top-0 h-full w-3/4 bg-white shadow-xl p-6 overflow-auto">
+        <div className="absolute left-0 top-0 h-full w-80 max-w-full bg-white shadow-xl p-6 overflow-auto">
           <button
             className="text-gray-800 hover:text-blue-600 focus:outline-none mb-6"
             onClick={() => setMobileMenuOpen(false)}
