@@ -188,7 +188,7 @@ export default function Navbar({
             aria-label="Open Menu"
           >
             <svg
-              className="h-8 w-8"
+              className="h-8 w-auto"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -204,7 +204,7 @@ export default function Navbar({
           </button>
           <div className="flex-shrink-0">
             <Link href="/">
-                <img src={logoSrc} alt={logoAlt} className="h-14 w-auto" />
+                <img src={logoSrc} alt={logoAlt} className="h-10 w-auto" />
             </Link>
           </div>
         </div>
