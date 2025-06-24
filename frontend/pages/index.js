@@ -1,5 +1,8 @@
 import Hero from "../components/Hero";
 import TrendingInsights from "../components/TrendingInsights";
+import Partners from "../components/Partners";
+import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home({ featuredInsight, trendingInsights }) {
   // Debug: log trendingInsights to check data structure
@@ -76,6 +79,9 @@ export default function Home({ featuredInsight, trendingInsights }) {
           </div>
         </div>
       </section>
+      <Partners />
+      <AboutSection />
+      <ContactSection />
     </>
   );
 }

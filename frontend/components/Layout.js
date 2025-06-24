@@ -9,9 +9,8 @@ export default function Layout({ children }) {
         <title>Consulting Firm</title>
         <meta name="description" content="Professional consulting services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <Navbar />
-      <main className="flex-grow">{children}</main>
+      </Head>      <Navbar />
+      <main className="flex-grow pt-24">{children}</main>
       <Footer />
     </>
   );
