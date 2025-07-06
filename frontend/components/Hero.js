@@ -42,19 +42,16 @@ export default function Hero({ insight }) {
       <div className="mx-auto px-6 lg:px-8" style={{ maxWidth: '1582px' }}>
         {/* Grid layout: 2 columns on desktop, stacked on mobile */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 min-h-[70vh] items-center py-16 lg:py-24">
-          
           {/* Left column: Text content */}
-          <div className="flex flex-col justify-center space-y-6">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-serif leading-tight text-black" 
+          <div className="grid grid-rows-[auto_1fr_auto] gap-6">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-serif leading-tight text-black"
                 style={{ fontFamily: 'Georgia, serif', lineHeight: '1.2' }}>
               {title}
             </h1>
-            
-            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed max-w-lg" 
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed max-w-lg"
                style={{ fontFamily: 'Georgia, serif', lineHeight: '1.6' }}>
               {summaryText}
             </p>
-            
             {ctaText && ctaUrl && (
               <div className="pt-4">
                 <a
@@ -70,9 +67,8 @@ export default function Hero({ insight }) {
               </div>
             )}
           </div>
-          
           {/* Right column: Image */}
-          <div className="flex items-center justify-center order-first lg:order-last">
+          <div className="grid place-items-center order-first lg:order-last">
             {imageUrl && (
               <div className="w-full max-w-lg">
                 <img
@@ -83,7 +79,6 @@ export default function Hero({ insight }) {
               </div>
             )}
           </div>
-          
         </div>
       </div>
     </div>

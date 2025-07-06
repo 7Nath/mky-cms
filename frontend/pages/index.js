@@ -29,8 +29,8 @@ export default function Home({ featuredInsight, trendingInsights }) {
           <TrendingInsights insights={trendingInsights} />
         </div>
       </section>
-      <Partners />
       <AboutSection />
+      <Partners />
       <ContactSection />
     </>
   );

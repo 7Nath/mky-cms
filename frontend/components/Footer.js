@@ -23,9 +23,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-white text-gray-800 text-sm">
-      <div className="border-t">        <div className="container mx-auto px-6 py-8 space-y-8 md:space-y-0 md:flex md:justify-between md:items-start">
-          {/* Subscribe */}
-          <div className="md:w-1/3">
+      <div className="border-t">
+        <div className="container mx-auto px-6 py-8 grid gap-8 md:grid-cols-3 items-start">
+          {/* Subscribe à gauche */}
+          <div>
             <img src="/logo.svg" alt="MKY Logo" className="h-20 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Subscribe</h3>
             <p className="mb-4">Get our latest insights delivered to your inbox.</p>
@@ -44,8 +45,11 @@ export default function Footer() {
             </form>
           </div>
 
-          {/* Social Icons */}
-          <div className="md:w-1/3 flex justify-center md:justify-end space-x-4 md:self-end">
+          {/* Colonne vide au centre pour l'équilibre du grid */}
+          <div></div>
+
+          {/* Social Icons à droite, horizontales, mais placées plus bas */}
+          <div className="flex flex-row items-end space-x-4 justify-end h-full pb-17.5">
             <a href="#" aria-label="LinkedIn" className="hover:text-blue-700">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.7-2.2 3.6-2.2 3.8 0 4.5 2.5 4.5 5.8V24h-4V14.8c0-2.2 0-5-3-5s-3.5 2.4-3.5 4.8V24h-4V8z" />

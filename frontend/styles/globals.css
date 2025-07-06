@@ -2,6 +2,14 @@
   --nav-height: 4rem;
 }
 
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/sf-pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
