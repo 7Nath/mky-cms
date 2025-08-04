@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /**
  * TrendingInsights
  * Displays up to 4 trending insights in a compact horizontal banner.
@@ -23,18 +25,21 @@ export default function TrendingInsights({ insights }) {
         if (!item || !item.attributes) return null;
         const { id, attributes } = item;
         const title = attributes.title || "Untitled";
+        const slug = attributes.slug || attributes.ctaUrl || `insight-${id}`;
+        const insightUrl = slug.startsWith('/') ? slug : `/thought-leadership/${slug}`;
+        
         return (
           <div
             key={id}
             className="flex items-center border-r border-gray-200 last:border-none snap-start px-4 py-2"
             style={{ minWidth: 0 }}
           >
-            <span className="text-blue-600 font-bold text-2xl mr-4 flex-shrink-0">
+            <span className="text-violet-600 font-bold text-2xl mr-4 flex-shrink-0">
               {idx + 1}
             </span>
-            <span className="text-black text-sm font-medium truncate max-w-xs">
+            <Link href={insightUrl} className="text-black text-sm font-medium truncate max-w-xs hover:text-violet-600 hover:underline transition-all duration-200 cursor-pointer">
               {title}
-            </span>
+            </Link>
           </div>
         );
       })}

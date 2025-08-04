@@ -7,28 +7,42 @@ export const defaultMenuItems = [
     title: "Industries",
     columns: [
       {
-        title: "By Sector",
         links: [
-          { title: "Consumer", href: "/industries/consumer" },
-          { title: "Energy & Materials", href: "/industries/energy-materials" },
+          { title: "Aerospace & Defense", href: "/industries/aerospace-defense" },
+          { title: "Agriculture", href: "/industries/agriculture" },
+          { title: "Chemicals", href: "/industries/chemicals" },
+          { title: "Consumer Packaged Goods", href: "/industries/consumer-packaged-goods" },
+          { title: "Education", href: "/industries/education" },
+          { title: "Electric Power & Natural Gas", href: "/industries/electric-power-natural-gas" },
+          { title: "Energy and Materials", href: "/industries/energy-and-materials" },
+          { title: "Healthcare", href: "/industries/healthcare" },
+          { title: "Engineering, Construction & Building Materials", href: "/industries/engineering-construction-building-materials" },
+        ],
+      },
+      {
+        links: [
           { title: "Financial Services", href: "/industries/financial-services" },
           { title: "Healthcare", href: "/industries/healthcare" },
+          { title: "Industrials & Electronics", href: "/industries/industrials-electronics" },
+          { title: "Infrastructure", href: "/industries/infrastructure" },
+          { title: "Life Sciences", href: "/industries/life-sciences" },
+          { title: "Logistics", href: "/industries/logistics" },
+          { title: "Metals & Mining", href: "/industries/metals-mining" },
+          { title: "Oil & Gas", href: "/industries/oil-gas" },
+          { title: "Packaging & Paper", href: "/industries/packaging-paper" },
         ],
       },
       {
-        title: "By Topic",
         links: [
-          { title: "Digital", href: "/industries/digital" },
-          { title: "Operations", href: "/industries/operations" },
-          { title: "Risk", href: "/industries/risk" },
-          { title: "Sustainability", href: "/industries/sustainability" },
-        ],
-      },
-      {
-        title: "Explore",
-        links: [
-          { title: "All Industries", href: "/industries" },
-          { title: "Case Studies", href: "/case-studies" },
+          { title: "Private Capital", href: "/private-capital" },
+          { title: "Public Sector", href: "/public-sector" },
+          { title: "Real Estate", href: "/industries/real-estate" },
+          { title: "Retail", href: "/industries/retail" },
+          { title: "Semiconductors", href: "/industries/semiconductors" },
+          { title: "Social Sector", href: "/industries/social-sector" },
+          { title: "Consumer", href: "/industries/consumer" },
+          { title: "Technology, Media & Telecommunications", href: "/industries/technology-media-telecommunications" },
+          { title: "Travel", href: "/industries/travel" },
         ],
       },
     ],
@@ -37,18 +51,24 @@ export const defaultMenuItems = [
     title: "Capabilities",
     columns: [
       {
-        title: "Consulting",
         links: [
-          { title: "Strategy & Corporate Finance", href: "/capabilities/strategy-finance" },
-          { title: "Marketing & Sales", href: "/capabilities/marketing-sales" },
-          { title: "Digital Transformation", href: "/capabilities/digital-transformation" },
+          { title: "Artificial Intelligence", href: "/capabilities/artificial-intelligence" },
+          { title: "Business Building", href: "/capabilities/business-building" },
+          { title: "Geopolitics", href: "/capabilities/geopolitics" },
+          { title: "Growth, Marketing & Sales", href: "/capabilities/growth-marketing-sales" },
+          { title: "Implementation", href: "/capabilities/implementation" },
+          { title: "M&A", href: "/capabilities/mergers-acquisitions" },
+          { title: "Operations", href: "/capabilities/operations" },
         ],
       },
       {
-        title: "Implementation",
         links: [
-          { title: "Operations Improvement", href: "/capabilities/operations-improvement" },
-          { title: "Organization & Leadership", href: "/capabilities/organization-leadership" },
+          { title: "Risk & Resilience", href: "/capabilities/risk-resilience" },
+          { title: "Strategy & Corporate Finance", href: "/capabilities/strategy-corporate-finance" },
+          { title: "People & Organization Performance", href: "/capabilities/people-organization-performance" },
+          { title: "Sustainability", href: "/capabilities/sustainability" },
+          { title: "Technology", href: "/capabilities/technology" },
+          { title: "Transformation", href: "/capabilities/transformation" },
         ],
       },
       {
@@ -63,55 +83,49 @@ export const defaultMenuItems = [
     title: "Featured Insights",
     columns: [
       {
-        title: "Insights",
+        title: "TRENDING TOPICS",
         links: [
-          { title: "Articles", href: "/insights/articles" },
-          { title: "Reports", href: "/insights/reports" },
-          { title: "Podcasts", href: "/insights/podcasts" },
+          { title: "Artificial Intelligence & Gen AI", href: "/insights/artificial-intelligence" },
+          { title: "Business Resilience", href: "/insights/business-resilience" },
+          { title: "Case Studies", href: "/insights/case-studies" },
+          { title: "Tariffs and Global Trade", href: "/insights/global-trade" },
+          { title: "The Rise of Quantum Computing", href: "/insights/quantum-computing" },
+        ],
+        secondaryTitle: "FEATURED SERIES",
+        secondaryLinks: [
+          { title: "Global Surveys", href: "/insights/global-surveys" },
+          { title: "MKY Explainers", href: "/insights/explainers" },
+          { title: "MKY on Books", href: "/insights/books" },
         ],
       },
       {
-        title: "Explore",
+        title: "INTERVIEWS",
         links: [
-          { title: "All Insights", href: "/insights" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Locations",
-    columns: [
-      {
-        title: "Our Offices",
-        links: [
-          { title: "Americas", href: "/locations/americas" },
-          { title: "Europe", href: "/locations/europe" },
-          { title: "Asia", href: "/locations/asia" },
+          { title: "Author Talks", href: "/insights/author-talks" },
+          { title: "MKY Live", href: "/insights/live" },
+          { title: "MKY Podcast", href: "/insights/podcast" },
+          { title: "MKY Video", href: "/insights/video" },
         ],
       },
       {
-        title: "Explore",
+        title: "FEATURED",
+        featured: true,
         links: [
-          { title: "All Locations", href: "/locations" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Careers",
-    columns: [
-      {
-        title: "Opportunities",
-        links: [
-          { title: "Students & Graduates", href: "/careers/students-graduates" },
-          { title: "Professional Roles", href: "/careers/professional-roles" },
-          { title: "Experienced Hires", href: "/careers/experienced-hires" },
-        ],
-      },
-      {
-        title: "Explore",
-        links: [
-          { title: "All Careers", href: "/careers" },
+          { 
+            title: "MKY Quarterly", 
+            description: "Our flagship business publication has been defining and informing the senior-management agenda since 1964.",
+            href: "/insights/quarterly" 
+          },
+          { 
+            title: "MKY Global Institute", 
+            description: "Our mission is to help leaders in multiple sectors develop a deeper understanding of the global economy.",
+            href: "/insights/mgi" 
+          },
+          { 
+            title: "Ask MKY", 
+            description: "Get answers to the questions that matter to you—based on MKY insights. This pilot of our new gen AI chatbot covers digital, AI, technology, media, and telecoms. Other topics coming soon.",
+            href: "/insights/ask-mckinsey" 
+          },
         ],
       },
     ],
@@ -146,6 +160,7 @@ export default function Navbar({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(null);
   const navRef = useRef(null);
+  const hoverTimeoutRef = useRef(null);
 
   // Close menus on outside click
   useEffect(() => {
@@ -171,6 +186,31 @@ export default function Navbar({
   const toggleMobileSubmenu = (idx) => {
     setMobileSubmenuOpen(mobileSubmenuOpen === idx ? null : idx);
   };
+
+  const handleMouseEnter = (menuTitle) => {
+    // Clear any existing timeout
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    setOpenMenu(menuTitle);
+  };
+
+  const handleMouseLeave = () => {
+    // Add a small delay before closing the menu
+    hoverTimeoutRef.current = setTimeout(() => {
+      setOpenMenu(null);
+    }, 150); // 150ms delay
+  };
+
+  // Clean up timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) {
+        clearTimeout(hoverTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <nav
@@ -209,15 +249,15 @@ export default function Navbar({
           </div>
         </div>
         {/* Desktop Menu */}
-        <div className="hidden md:flex md:space-x-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <ul role="menubar" className="flex space-x-8">
+        <div className="hidden lg:flex lg:space-x-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <ul role="menubar" className="flex space-x-4 lg:space-x-6 xl:space-x-8">
             {menuItems.map((item) => (
               <li
                 key={item.title}
                 role="none"
                 className="relative"
-                onMouseEnter={() => setOpenMenu(item.title)}
-                onMouseLeave={() => setOpenMenu(null)}
+                onMouseEnter={() => handleMouseEnter(item.title)}
+                onMouseLeave={handleMouseLeave}
               >
                 <button
                   type="button"
@@ -235,23 +275,61 @@ export default function Navbar({
                   <div
                     role="menu"
                     aria-label={item.title}
-                    className="absolute left-0 top-full mt-2 w-screen max-w-lg bg-white shadow-lg p-6 grid grid-cols-3 gap-6"
+                    className={`absolute top-full mt-2 bg-white shadow-lg p-6 grid gap-6 ${
+                      item.title === "Featured Insights" ? 'w-screen max-w-5xl grid-cols-3' :
+                      item.columns.length === 1 ? 'w-64' : 
+                      item.columns.length === 2 ? 'w-96 grid-cols-2' : 
+                      'w-screen max-w-4xl grid-cols-3'
+                    }`}
+                    style={{
+                      right: item.title === 'About Us' || item.title === 'Careers' ? '0' : 'auto',
+                      left: item.title === 'About Us' || item.title === 'Careers' ? 'auto' : 
+                            item.title === 'Featured Insights' ? '50%' : '0',
+                      transform: item.title === 'About Us' || item.title === 'Careers' ? 'translateX(0)' : 
+                                item.title === 'Featured Insights' ? 'translateX(-50%)' : 'none'
+                    }}
+                    onMouseEnter={() => handleMouseEnter(item.title)}
+                    onMouseLeave={handleMouseLeave}
                   >
-                    {item.columns.map((col) => (
-                      <div key={col.title}>
-                        <h3 className="text-sm font-semibold text-gray-900">{col.title}</h3>
-                        <ul className="mt-4 space-y-2">
+                    {item.columns.map((col, colIndex) => (
+                      <div key={col.title || colIndex} className={col.featured ? 'bg-gray-50 p-4 rounded-lg' : ''}>
+                        <h3 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wide">{col.title}</h3>
+                        <ul className="space-y-3">
                           {col.links.map((link) => (
                             <li key={link.title} role="none">
                               <Link href={link.href}
                                   role="menuitem"
-                                  className="text-black hover:text-blue-600 text-sm"
+                                  className={`block transition-all duration-200 ${col.featured ? 'mb-4 hover:text-violet-600 hover:underline' : 'hover:text-violet-600 hover:underline'}`}
                                 >
-                                  {link.title}
+                                  <div className={col.featured ? 'font-semibold text-gray-900 mb-1' : 'text-black text-sm'}>
+                                    {link.title}
+                                  </div>
+                                  {link.description && (
+                                    <div className="text-xs text-gray-600 leading-relaxed">
+                                      {link.description}
+                                    </div>
+                                  )}
                               </Link>
                             </li>
                           ))}
                         </ul>
+                        {col.secondaryTitle && (
+                          <>
+                            <h3 className="text-sm font-bold text-gray-900 mb-4 mt-8 uppercase tracking-wide">{col.secondaryTitle}</h3>
+                            <ul className="space-y-3">
+                              {col.secondaryLinks?.map((link) => (
+                                <li key={link.title} role="none">
+                                  <Link href={link.href}
+                                      role="menuitem"
+                                      className="text-black hover:text-violet-600 hover:underline text-sm block transition-all duration-200"
+                                    >
+                                      {link.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
                       </div>
                     ))}
                   </div>
@@ -262,14 +340,8 @@ export default function Navbar({
         </div>
         {/* Actions */}
         <div className="flex items-center">
-          {/* Desktop Links */}
-          <div className="hidden md:flex space-x-4">
-            <Link href="/signin" className="text-gray-800 hover:text-blue-600 text-sm">Sign In</Link>
-            <span className="text-gray-400">|</span>
-            <Link href="/subscribe" className="text-gray-800 hover:text-blue-600 text-sm">Subscribe</Link>
-          </div>
           {/* Desktop Search */}
-          <button className="hidden md:inline-flex items-center text-gray-800 hover:text-blue-600 focus:outline-none ml-4">
+          <button className="hidden lg:inline-flex items-center text-gray-800 hover:text-blue-600 focus:outline-none">
             <span className="sr-only">Search</span>
             <svg
               className="h-5 w-5"
@@ -369,10 +441,6 @@ export default function Navbar({
               </div>
             ))}
             <div className="pt-4 border-t border-gray-200">
-              <Link href="/signin" className="block text-black hover:text-blue-600 py-2">Sign In
-              </Link>
-              <Link href="/subscribe" className="block text-black hover:text-blue-600 py-2">Subscribe
-              </Link>
               <button className="flex items-center text-black hover:text-blue-600 py-2 focus:outline-none">
                 <span className="sr-only">Search</span>
                 <svg

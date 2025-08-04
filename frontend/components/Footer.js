@@ -84,7 +84,7 @@ export default function Footer() {
             </div>
             {/* Copyright à droite */}
             <div className="text-center md:text-right">
-              <p>&copy; {new Date().getFullYear()} Consulting Firm. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} MKY Group. All rights reserved.</p>
             </div>
           </div>
         </div>
